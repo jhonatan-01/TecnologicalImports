@@ -1,0 +1,30 @@
+package apps.jjv.tecnologicalimports;
+
+import android.content.Intent;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+
+public class Registrarse extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_registrarse);
+    }
+    //Metodo para el boton Contactenos
+    public void Contactenos(View View){
+        Intent contactenos = new Intent(this, contactenos.class);
+        startActivity(contactenos);
+    }
+    //Metodo para el boton Informacion
+    public void Informacion(View View){
+        Intent informacion = new Intent(this, informacion.class);
+        startActivity(informacion);
+    }
+    //Metodo para el boton Registrarse
+    public void Registrarse(View View){
+        Intent registrarse = new Intent(this, Registrarse.class);
+        startActivity(registrarse);
+    }
+}

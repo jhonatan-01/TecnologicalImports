@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context=".informacion">
+
+    <Button
+        android:id="@+id/btn_registrarse3"
+        android:layout_width="101dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="44dp"
+        android:hint="@string/Botonlogin"
+        android:onClick="Login"
+        android:text="@string/Botonlogin"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/Botonlogin" />
+
+    <Button
+        android:id="@+id/btn_categorias3"
+        android:layout_width="86dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:hint="hv"
+        android:onClick="Productos"
+        android:text="@string/Botonproductos"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_contactenos3"
+        app:layout_constraintHorizontal_bias="0.352"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_registrarse3" />
+
+    <Button
+        android:id="@+id/btn_contactenos3"
+        android:layout_width="99dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="20dp"
+        android:onClick="Contactenos"
+        android:text="@string/Botoncontactenos"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_informacion3"
+        app:layout_constraintTop_toBottomOf="@+id/btn_registrarse3" />
+
+    <Button
+        android:id="@+id/btn_informacion3"
+        android:layout_width="101dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="20dp"
+        android:hint="@string/Botoninformacion"
+        android:onClick="Informacion"
+        android:text="Informacion"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_registrarse3" />
+</android.support.constraint.ConstraintLayout>
